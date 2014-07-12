@@ -6,23 +6,22 @@
  * Time: 22:41
  */
 
-namespace shootingRange;
+//namespace shootingRange;
 
 
 class User {
 
     public function shot($gun, $numberOfShots){
+        $numberOfMagazine = 0;
         for($i = 0; $i <= $numberOfShots; $i++){
-            $numberOfMagazine = 0;
 
             $gun->numberOfBullets--;
             if($gun->numberOfBullets <= 0){
                 $this->reload($gun);
                 $numberOfMagazine++;
             }
-
-            echo "Солдат сделал ".$i." выстрелов, поменял ".$numberOfMagazine." магазинов";
         }
+        echo "Soldier did $numberOfShots shots, changed $numberOfMagazine magazine <br>";
     }
 
     public function reload($gun){
