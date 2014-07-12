@@ -6,14 +6,9 @@
  * Time: 22:50
  */
 
-namespace shootingRange;
+//namespace shootingRange;
 
 
 class uzi{
-    public $numberOfBullets;
-
-    function __construct()
-    {
-        $numberOfBullets = 30;
-    }
+    public $numberOfBullets = 30;
 }

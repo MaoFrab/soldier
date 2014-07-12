@@ -6,14 +6,9 @@
  * Time: 22:49
  */
 
-namespace shootingRange;
+//namespace shootingRange;
 
 
 class rifle{
-    public $numberOfBullets;
-
-    function __construct()
-    {
-        $numberOfBullets = 5;
-    }
+    public $numberOfBullets = 5;
 }
