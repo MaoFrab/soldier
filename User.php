@@ -25,8 +25,21 @@ class User {
     }
 
     public function reload($gun){
-        if($gun instanceof pistol) $gun->numberOfBullets = 7;
-            elseif($gun instanceof rifle) $gun->numberOfBullets = 5;
-                else $gun->numberOfBullets = 30;
+
+        switch($gun->classOfGun){
+            case "pistol":
+                $gun->numberOfBullets = 7;
+                break;
+            case "rifle":
+                $gun->numberOfBullets = 5;
+                break;
+            case "uzi":
+                $gun->numberOfBullets = 30;
+                break;
         }
+    }
+        //if($gun instanceof pistol) $gun->numberOfBullets = 7;
+        //    elseif($gun instanceof rifle) $gun->numberOfBullets = 5;
+        //        else $gun->numberOfBullets = 30;
+        //}
 } 

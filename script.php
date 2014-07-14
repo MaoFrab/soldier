@@ -1,13 +1,22 @@
 <?php
 //namespace shootingRange;
 
-function __autoload($className){
-    require_once $className.".php";
-}
+//function __autoload($className){
+//    require_once $className.".php";
+//}
+include("gun.php");
+include("User.php");
 
-$pistol = new pistol();
-$rifle = new rifle();
-$uzi = new uzi();
+//$pistol = new pistol();
+//$rifle = new rifle();
+//$uzi = new uzi();
+
+$pistol = new gun("pistol");
+$rifle = new gun("rifle");
+$uzi = new gun("uzi");
+var_dump($pistol);
+var_dump($rifle);
+var_dump($uzi);
 
 $soldier1 = new User();
 $soldier2 = new User();
