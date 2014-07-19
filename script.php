@@ -25,5 +25,7 @@ $soldier3 = new User();
 $soldier1->shot($pistol, 30);
 $soldier2->shot($rifle, 30);
 $soldier3->shot($uzi, 30);
+
+phpinfo();
 echo "End.";
 ?>
